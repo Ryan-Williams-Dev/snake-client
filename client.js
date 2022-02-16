@@ -10,8 +10,8 @@ const connect = function () {
   conn.setEncoding("utf8");
 
   conn.on('connect', () => {
-    console.log("Successfully connected")
-    conn.write('Name: RDW')
+    console.log("Successfully connected");
+    conn.write('Name: RDW');    
   })
 
 
