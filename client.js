@@ -9,6 +9,13 @@ const connect = function () {
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
+  conn.on('connect', () => {
+    console.log("Successfully connected")
+    conn.write('Name: RDW')
+  })
+
+
+
   conn.on('data', (data) => {
     console.log(data);
   })
